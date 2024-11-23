@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dispro - Diseño, Proyectos y Construcción">
+    <title>Dispro - Diseño, Proyectos y Construcción</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8f4ec;
+            color: #3e3e3e;
+            line-height: 1.6;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Header with Logo */
+        header {
+            background: linear-gradient(to right, #a65a2d, #f2d9c2, #dbc29e);
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0;
+            position: relative;
+        }
+
+        header .logo {
+            background: url('img.jpg') no-repeat center center/contain;
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #3e3e3e;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #6a4d3a;
+        }
+
+        /* Navbar */
+        nav {
+            background: #6a4d3a;
+            display: flex;
+            justify-content: center;
+            padding: 1rem 0;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #f2d9c2;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: rgba(255, 248, 245, 0.9);
+            text-align: center;
+            padding: 150px 20px;
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #a65a2d;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            color: #6a4d3a;
+        }
+
+        .hero .btn {
+            padding: 10px 20px;
+            background: #a65a2d;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .hero .btn:hover {
+            background: #6a4d3a;
+        }
+
+        /* About Section */
+        .section {
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .about {
+            background-color: #f8f4ec;
+        }
+
+        .about h2 {
+            font-size: 2.5rem;
+            color: #a65a2d;
+        }
+
+        .about p {
+            margin: 1rem 0;
+            color: #6a4d3a;
+        }
+
+        /* Services */
+        .services {
+            background-color: #f2d9c2;
+        }
+
+        .services h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: #3e3e3e;
+        }
+
+        .services .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .services .card {
+            background: #fff;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .services .card img {
+            border-radius: 10px;
+            margin-bottom: 1rem;
+        }
+
+        .services .card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #6a4d3a;
+        }
+
+        .services .card p {
+            color: #555;
+        }
+
+        /* Contact */
+        .contact {
+            background-color: #6a4d3a;
+            color: #fff;
+        }
+
+        .contact h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: #f2d9c2;
+        }
+
+        .contact form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact input, .contact textarea {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .contact textarea {
+            resize: none;
+        }
+
+        .contact button {
+            background: #a65a2d;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact button:hover {
+            background: #6a4d3a;
+        }
+
+        footer {
+            background: #3e3e3e;
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo"></div>
+        <h1>Dispro</h1>
+        <p>Diseño, Proyectos y Construcción</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#about">Nosotros</a></li>
+            <li><a href="#services">Servicios</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+    </nav>
+    <section class="hero">
+        <h2>Bienvenidos a Dispro</h2>
+        <p>Transformamos espacios con diseño e innovación.</p>
+        <a href="#services" class="btn">Conoce Nuestros Servicios</a>
+    </section>
+    <section id="about" class="section about">
+        <h2>Sobre Nosotros</h2>
+        <p>En Dispro, somos expertos en diseño de interiores y exteriores. Creamos espacios funcionales y elegantes adaptados a tus necesidades.</p>
+    </section>
+    <section id="services" class="section services">
+        <h2>Servicios</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="img1.jpg" alt="Diseño de Interiores">
+                <h3>Diseño de Interiores</h3>
+                <p>Espacios únicos que reflejan tu personalidad.</p>
+            </div>
+            <div class="card">
+                <img src="img2.jpg.crdownload" alt="Diseño de Exteriores">
+                <h3>Diseño de Exteriores</h3>
+                <p>Embellece tus áreas al aire libre con estilo.</p>
+            </div>
+            <div class="card">
+                <img src="img3.jpg" alt="Proyectos de Construcción">
+                <h3>Proyectos de Construcción</h3>
+                <p>Realizamos proyectos desde la idea hasta la ejecución.</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="section contact">
+        <h2>Contacto</h2>
+        <form action="#" method="POST">
+            <input type="text" placeholder="Nombre" required>
+            <input type="email" placeholder="Correo Electrónico" required>
+            <textarea placeholder="Mensaje" rows="5" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+        <p>Teléfono: +57 123 456 7890 | Correo: info@dispro.com</p>
+        <p>Ubicación: Calle 123, Ciudad, País</p>
+    </section>
+    <footer>
+        <p>&copy; 2024 Dispro. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
